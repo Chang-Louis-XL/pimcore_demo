@@ -6,8 +6,6 @@
 	<div class="main-content">
 
 
-
-
 		{% set  property_123 = document.getProperty('123') %}
 		{{ dump(property_123) }}
 
@@ -16,81 +14,77 @@
                                         'height': 50,
                                         'placeholder': '文字區'
                                     }) }}
-		
-			{# 
-																		{{ pimcore_wysiwyg("myWYSIWYG", {    
-																		    "height": 600,
-																		    "width": 1100,
-																		    "placeholder": "Enter you content"
-																		}) }} #}
+
+		{# 
+																				{{ pimcore_wysiwyg("myWYSIWYG", {    
+																				    "height": 600,
+																				    "width": 1100,
+																				    "placeholder": "Enter you content"
+																				}) }} #}
 
 
-			{# {{ pimcore_wysiwyg('aboutus_wysiwyg', {
-													"height": 500,
-													"toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link image media | codesample code fullscreen",
-													"plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount emoticons",
-													"menubar": "file edit view insert format tools table help",
-													"content_style": "body { color: #000 !important; background-color: #fff !important;}",
-													'removed_menuitems': 'forecolor backcolor',
-													'language': 'zh_TW',
-													"language_url": "/bundles/pimcoretinymce/js/langs/zh_TW.js"
-												}) }} #}
+		{# {{ pimcore_wysiwyg('aboutus_wysiwyg', {
+															"height": 500,
+															"toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link image media | codesample code fullscreen",
+															"plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount emoticons",
+															"menubar": "file edit view insert format tools table help",
+															"content_style": "body { color: #000 !important; background-color: #fff !important;}",
+															'removed_menuitems': 'forecolor backcolor',
+															'language': 'zh_TW',
+															"language_url": "/bundles/pimcoretinymce/js/langs/zh_TW.js"
+														}) }} #}
 
 
-			<br>
+		<br>
 
-			{{ pimcore_image("myImage", {
+		{{ pimcore_image("myImage", {
     "title": "Drag your image here",
     "width": 200,
     "height": 200,
     "thumbnail": "print_backgroundimage"
 }) }}
 
-			<br>
-			<br>
-			<br>
-			<br>
+		<br>
+		<br>
+		<br>
+		<br>
 
 
-			{{ pimcore_image("myIme", {
+		{{ pimcore_image("myIme", {
     "title": "Drag your image here",
     "width": 200,
     "height": 200,
     "thumbnail": "print_backgroundimage"
 }) }}
-			{# 
-														{{ pimcore_wysiwyg('aboutus_wysiwyg', {
-												    "height": 500,
-												    "toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link image media | codesample code fullscreen",
-												    "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount emoticons",
-												    "menubar": "file edit view insert format tools table help",
-												    "content_style": "body { color: #000 !important; background-color: #fff !important;}",
-												    'removed_menuitems': 'forecolor backcolor',
-												    'language': 'zh_TW',
-												     "language_url": "/bundles/pimcoretinymce/js/langs/zh_TW.js"
-												}) }} #}
+		{# 
+																{{ pimcore_wysiwyg('aboutus_wysiwyg', {
+														    "height": 500,
+														    "toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link image media | codesample code fullscreen",
+														    "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount emoticons",
+														    "menubar": "file edit view insert format tools table help",
+														    "content_style": "body { color: #000 !important; background-color: #fff !important;}",
+														    'removed_menuitems': 'forecolor backcolor',
+														    'language': 'zh_TW',
+														     "language_url": "/bundles/pimcoretinymce/js/langs/zh_TW.js"
+														}) }} #}
 
 
-			{# {% set navMenuNode = pimcore_document(document.getProperty('test_text')) %} #}
-			<br>
-			<br>
-			<br>
-			<br>
+		{# {% set navMenuNode = pimcore_document(document.getProperty('test_text')) %} #}
+		<br>
+		<br>
+		<br>
+		<br>
 
-			<img src="{{ asset('var/assets/Car Images/ac cars/automotive-car-classic-149813.jpg') }}" loading="lazy"> <br>
-			<br>
-			<br>
-			<br>
-
-
+		<img src="{{ asset('var/assets/Car Images/ac cars/automotive-car-classic-149813.jpg') }}" loading="lazy"> <br>
+		<br>
+		<br>
+		<br>
 
 
+		預覽模式123:
+		{{ property_123 ?? '無內容' }}
 
-			預覽模式:
-			{{ property_123 ?? '無內容' }}
-
-		</div>
-
+	</div>
 
 
 {%  endblock %}

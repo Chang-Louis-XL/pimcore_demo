@@ -53,8 +53,16 @@ class DefaultController extends BaseController
     }
 
     
+    // public function testAction(): Response
+    // {
+    //     return $this->render( 'default/test.html.twig');
+    // }
+
     public function testAction(): Response
-    {
-        return $this->render( 'default/test.html.twig');
-    }
+{
+    $response = new Response();
+    $response->headers->addCacheControlDirective('no-store');
+    
+    return $this->render('default/test.html.twig', [], $response);
+}
 }
